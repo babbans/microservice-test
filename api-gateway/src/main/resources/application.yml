@@ -1,0 +1,31 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: api-gateway
+  security:
+    user:
+      name: admin
+      password: admin123
+      roles: ADMIN
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: health, info
+      enabled-by-default: true
+      base-path: /admin
+  client:
+    service-url:
+      default-zone=http://localhost:8761/eureka/:
+  cloud:
+    gateway:
+      routes:
+        - id: Microservice1
+          uri: http://localhost:8081/
+          Predicates:
+            - Path=/serviceA/**
+        - id: Microservice2
+          uri: http://localhost:8082/
+          Predicates:
+            - Path=/serviceB/**
