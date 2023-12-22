@@ -1,6 +1,8 @@
 server:
   port: 8765
 spring:
+  main:
+    allow-bean-definition-overriding: true
   application:
     name: api-gateway
   security:
@@ -22,10 +24,23 @@ spring:
     gateway:
       routes:
         - id: Microservice1
-          uri: http://localhost:8081/
+          uri: lb://Microservice1
           Predicates:
             - Path=/serviceA/**
+          filters:
+            - FallbackFilter=_
         - id: Microservice2
-          uri: http://localhost:8082/
+          uri: lb://Microservice2
           Predicates:
             - Path=/serviceB/**
+resilience4j:
+  circuitbreaker:
+    instances:
+      default:
+        registerHealthIndicator: true
+        slidingWindowSize: 5
+        minimumNumberOfCalls: 5
+        waitDurationInOpenState: 100
+        failureRateThreshold: 5
+
+
