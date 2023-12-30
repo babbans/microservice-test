@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-one/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-two/pom.xml" />
+        <option value="$PROJECT_DIR$/eqa-gateway-service/pom.xml" />
       </list>
     </option>
   </component>

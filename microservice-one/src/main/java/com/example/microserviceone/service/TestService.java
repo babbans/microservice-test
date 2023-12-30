@@ -8,6 +8,6 @@ import org.springframework.stereotype.Service;
 public class TestService {
 
     public String greet() {
-        return "Hello World!";
+        return "Microservice 1 controller executed:";
     }
 }

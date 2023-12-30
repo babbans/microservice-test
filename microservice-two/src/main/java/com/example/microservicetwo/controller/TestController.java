@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("/serviceB")
+@RequestMapping("/ms-two")
 @RestController
 public class TestController {
-    @GetMapping("/displayMessage")
+    @GetMapping("/hello")
     public ResponseEntity<String> showMessage(){
         return ResponseEntity.ok("Microservice 2 controller executed");
     }

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: MicroService1
+    name: microservice-one
   server:
     port: 8081
 eureka:
