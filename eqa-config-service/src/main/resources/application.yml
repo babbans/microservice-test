@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: eqa-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://143.244.132.119/root/eqa-config-server.git
+          username: root
+          password: technojade
+          clone-on-start: true
