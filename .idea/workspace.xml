@@ -4,21 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb532ecf-a207-405a-be36-ff6e7f5bbd04" name="Changes" comment="">
+    <list default="true" id="9c879cbf-441d-4409-b65d-b1d08ebc61bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/eqa-config-service/src/main/java/com/eqa/eqaconfigservice/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eqa-eureka-server/src/main/java/com/eqa/eqaeurekaserver/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eqa-eureka-server/src/main/java/com/eqa/eqaeurekaserver/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eqa-eureka-server/src/main/resources/img/spring-logo-eureka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/aop/AutoLoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/eqa.datadimens.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/eqa.datadimens.p7c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/eqa_cert.crt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-gateway-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/exception/TokenValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/ApiGatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/FallbackFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/WebSecurity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-config-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-config-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-config-service/src/main/java/com/eqa/eqaconfigservice/EqaConfigServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-config-service/src/main/java/com/eqa/eqaconfigservice/EqaConfigServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-config-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-config-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-config-service/src/test/java/com/eqa/eqaconfigservice/EqaConfigServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/EqaGatewayServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/EqaGatewayServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eurekaserver/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/src/main/java/com/eqa/eqaeurekaserver/EurekaServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-one/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-one/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-two/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-two/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,24 +73,30 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2aJ8oAyTNISzb8z9PEdG5Ennkmm" />
+  <component name="ProjectId" id="2aXvtxENwUQXVjHJ6KnKRkd6EDk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "E:/projects/springboot-microservice/eqa-eureka-server/src/main/resources/img"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\springboot-microservice\eqa-eureka-server\src\main\resources\img" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.EqaGatewayServiceApplication">
-    <configuration name="EqaConfigServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MicroserviceOneApplication">
+    <configuration name="EqaConfigServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.eqa.eqaconfigservice.EqaConfigServiceApplication" />
       <module name="eqa-config-service" />
       <extension name="coverage">
@@ -58,11 +104,6 @@
           <option name="PATTERN" value="com.eqa.eqaconfigservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
-      </extension>
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,11 +131,24 @@
       </method>
     </configuration>
     <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.eurekaserver.EurekaServerApplication" />
-      <module name="eureka-server" />
+      <option name="MAIN_CLASS_NAME" value="com.eqa.eqaeurekaserver.EurekaServerApplication" />
+      <module name="eqa-eureka-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.eurekaserver.*" />
+          <option name="PATTERN" value="com.eqa.eqaeurekaserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroserviceOneApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.microserviceone.MicroserviceOneApplication" />
+      <module name="microservice-one" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.microserviceone.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,41 +157,28 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.EqaConfigServiceApplication" />
       <item itemvalue="Application.EqaGatewayServiceApplication" />
+      <item itemvalue="Application.MicroserviceOneApplication" />
+      <item itemvalue="Application.EqaConfigServiceApplication" />
       <item itemvalue="Application.EurekaServerApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.EurekaServerApplication" />
+        <item itemvalue="Application.MicroserviceOneApplication" />
+        <item itemvalue="Application.EqaConfigServiceApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cb532ecf-a207-405a-be36-ff6e7f5bbd04" name="Changes" comment="" />
-      <created>1704025498243</created>
+      <changelist id="9c879cbf-441d-4409-b65d-b1d08ebc61bb" name="Changes" comment="" />
+      <created>1704477958594</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1704025498243</updated>
+      <updated>1704477958594</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

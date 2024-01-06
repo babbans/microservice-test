@@ -16,10 +16,10 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .authorizeExchange((authorize) -> authorize
                         .pathMatchers("/actuator/**").hasAnyRole("ADMIN")
-                        //.pathMatchers("/ms-one/**").permitAll()
                         .anyExchange().permitAll()
                 )
-                .httpBasic(Customizer.withDefaults());
+                .httpBasic(Customizer.withDefaults())
+                .formLogin(Customizer.withDefaults());
 
         return http.build();
     }

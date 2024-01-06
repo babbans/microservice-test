@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: eqa-config-server
+  security:
+    user:
+      name: admin
+      password: admin
   cloud:
     config:
       server:
@@ -12,3 +16,15 @@ spring:
           username: root
           password: technojade
           clone-on-start: true
+          timeout: 30 # in sec
+          refreshRate: 3600 #in sec
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
