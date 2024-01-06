@@ -6,22 +6,20 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.web.reactive.function.client.WebClientSsl;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
 import org.springframework.http.*;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.reactive.function.BodyInserters;
-import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.server.ServerWebExchange;
-import reactor.core.publisher.Mono;
 
 import java.io.IOException;
 
 @Component
+@RefreshScope
 public class AuthenticationFilter extends AbstractGatewayFilterFactory<AuthenticationFilter.Config> {
 
     private static final Logger log = LoggerFactory.getLogger(AuthenticationFilter.class);
@@ -37,10 +35,9 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
 
     @Value("${validateTokenUrl}")
     private String validateTokenUrl;
-    private final WebClient webClient;
-    public AuthenticationFilter(WebClient.Builder webClientBuilder, WebClientSsl ssl) {
+
+    public AuthenticationFilter() {
         super(Config.class);
-        this.webClient = webClientBuilder.apply(ssl.fromBundle("eqa")).build();
     }
     @Override
     public GatewayFilter apply(Config config) {
@@ -50,46 +47,18 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
                 throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Authorization header is missing in request");
 
             final String token = this.getAuthHeader(request);
-            validateTokenUsingWC(token);
-            //validateToken(token, exchange);
+            validateToken(token, exchange);
 
             return chain.filter(exchange);
         });
     }
-    private void validateTokenUsingWC(String token) {
-        try {
-            HttpHeaders headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_JSON);
 
-            String requestBody = "{\"token\": \"" + token + "\"}";
-            log.info("validate token url {} and token is {}", validateTokenUrl, token);
-
-            WebClient webClient = WebClient.create();
-
-            Mono<String> responseBodyMono = webClient.post()
-                    .uri("https://eqa.datadimens.com:8994/IDENTITY-SERVICE/validatetoken")
-                    .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
-                    .body(BodyInserters.fromValue(requestBody))
-                    .retrieve()
-                    .bodyToMono(String.class);
-
-            responseBodyMono.subscribe(
-                    responseBody -> log.info("responseBody {}", responseBody),
-                    error -> log.error("Error in WebClient request: {}", error.getMessage())
-            );
-
-
-        } catch (Exception e){
-            log.error("error", e);
-            throw e;
-        }
-    }
     private void validateToken(String token, ServerWebExchange exchange) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
 
         String requestBody = "{\"token\": \"" + token + "\"}";
-
+        log.info("Token validation url is {}", validateTokenUrl);
         HttpEntity<String> httpEntity = new HttpEntity<>(requestBody, headers);
         ResponseEntity<String> response = restTemplate.exchange(validateTokenUrl, HttpMethod.POST, httpEntity, String.class);
 
@@ -115,7 +84,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
             return jsonNode.get("status").asText();
         } catch (IOException e) {
             log.error("Error extracting 'status' from JSON response: {}", jsonResponse, e);
-            throw new RuntimeException("Error extracting 'status' from JSON response");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Error while validating token");
         }
     }
     private String getAuthHeader(ServerHttpRequest request) {

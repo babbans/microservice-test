@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>microservice-one</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>microservice-one</name>
+	<name>eqa-microservice-one</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

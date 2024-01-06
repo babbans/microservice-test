@@ -4,26 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c879cbf-441d-4409-b65d-b1d08ebc61bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/eqa-api-gateway/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-api-gateway/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-api-gateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-api-gateway/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-api-gateway/mvnw.cmd" beforeDir="false" />
+    <list default="true" id="668f626f-a351-415e-8572-a54b01c1cebb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/config/GatewayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/config/LoggingGlobalFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-config-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-config-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-eureka-server/src/main/java/com/eqa/eqaeurekaserver/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/src/main/java/com/eqa/eqaeurekaserver/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-microservice-one/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-microservice-one/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-microservice-one/src/main/java/com/example/microserviceone/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-microservice-one/src/main/java/com/example/microserviceone/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-microservice-one/src/main/java/com/example/microserviceone/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-microservice-one/src/main/java/com/example/microserviceone/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-microservice-one/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-microservice-one/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-microservice-two/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-microservice-two/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-microservice-two/src/main/java/com/example/microservicetwo/MicroserviceTwoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-microservice-two/src/main/java/com/example/microservicetwo/MicroserviceTwoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-microservice-two/src/main/java/com/example/microservicetwo/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-microservice-two/src/main/java/com/example/microservicetwo/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-microservice-two/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-microservice-two/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,7 +43,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2aXvtxENwUQXVjHJ6KnKRkd6EDk" />
+  <component name="ProjectId" id="2aZL4Yw2NcpqBVkseqL4fnTwrj5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,22 +51,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "E:/projects/springboot-microservice/eqa-eureka-server/src/main/resources/img"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\projects\springboot-microservice\eqa-eureka-server\src\main\resources\img" />
-    </key>
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn clean install" />
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.MicroserviceOneApplication">
-    <configuration name="EqaConfigServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MicroserviceTwoApplication">
+    <configuration name="EqaConfigServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="spring.profiles.active" value="dev" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.eqa.eqaconfigservice.EqaConfigServiceApplication" />
       <module name="eqa-config-service" />
       <extension name="coverage">
@@ -69,6 +66,11 @@
           <option name="PATTERN" value="com.eqa.eqaconfigservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,7 +97,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.eqa.eqaeurekaserver.EurekaServerApplication" />
       <module name="eqa-eureka-server" />
       <extension name="coverage">
@@ -108,12 +110,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MicroserviceOneApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MicroserviceOneApplication_1st_instance" type="Application" factoryName="Application" singleton="false">
+      <envs>
+        <env name="server.port" value="8081" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.example.microserviceone.MicroserviceOneApplication" />
       <module name="microservice-one" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.microserviceone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroserviceTwoApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.microservicetwo.MicroserviceTwoApplication" />
+      <module name="microservice-two" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.microservicetwo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,27 +146,52 @@
     </configuration>
     <list>
       <item itemvalue="Application.EqaGatewayServiceApplication" />
-      <item itemvalue="Application.MicroserviceOneApplication" />
       <item itemvalue="Application.EqaConfigServiceApplication" />
       <item itemvalue="Application.EurekaServerApplication" />
+      <item itemvalue="Application.MicroserviceOneApplication_1st_instance" />
+      <item itemvalue="Application.MicroserviceTwoApplication" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.EurekaServerApplication" />
-        <item itemvalue="Application.MicroserviceOneApplication" />
-        <item itemvalue="Application.EqaConfigServiceApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9c879cbf-441d-4409-b65d-b1d08ebc61bb" name="Changes" comment="" />
-      <created>1704477958594</created>
+      <changelist id="668f626f-a351-415e-8572-a54b01c1cebb" name="Changes" comment="" />
+      <created>1704520965339</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1704477958594</updated>
+      <updated>1704520965339</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -11,16 +11,35 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 30
 
-
 spring:
+  application:
+    name: eqa-eureka-server
   security:
     user:
       name: admin
       password: admin
-  main:
-    allow-bean-definition-overriding: true
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId},%X{spanId}]"
+  file:
+    name: /home/logs/${spring.application.name}
+
 management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        include: "*"
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always
+  info:
+    env:
+      enabled: true
+    java:
+      enabled: true
+    os:
+      enabled: true
+

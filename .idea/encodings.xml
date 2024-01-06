@@ -7,9 +7,9 @@
     <file url="file://$PROJECT_DIR$/eqa-eureka-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eqa-gateway-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eqa-gateway-service/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-one/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-one/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-two/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-two/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eqa-microservice-one/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eqa-microservice-one/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eqa-microservice-two/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eqa-microservice-two/src/main/resources" charset="UTF-8" />
   </component>
 </project>

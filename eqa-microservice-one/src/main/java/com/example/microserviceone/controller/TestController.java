@@ -32,7 +32,7 @@ public class TestController {
 
     @GetMapping("/hello")
     public ResponseEntity<String> hello(){
-        return ResponseEntity.ok(testService.greet());
+        return ResponseEntity.ok(testService.hello());
     }
     @GetMapping("/displayMessage")
     public ResponseEntity<String> showMessage(){

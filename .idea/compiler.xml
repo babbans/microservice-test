@@ -8,13 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eqa-config-service" />
         <module name="eqa-gateway-service" />
+        <module name="microservice-two" />
         <module name="eqa-eureka-server" />
+        <module name="microservice-one" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="microservice-one" target="17" />
-      <module name="microservice-two" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

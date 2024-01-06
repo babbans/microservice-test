@@ -1,89 +1,31 @@
-server:
-  port: 8766
-  error:
-    include-message: always
-logging:
-  pattern:
-    level: "%5p [${spring.application.name:},%X{traceId},%X{spanId}]"
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      probes:
-        enabled: true
-      show-details: always
-      show-components: always
-  metrics:
-    tags:
-      application: ${spring.application.name}
-    distribution:
-      percentiles-histogram:
-        all: true
-        http.server.requests: true
-  tracing:
-    sampling:
-      probability: 1.0
-  info:
-    env:
-      enabled: true
-    java:
-      enabled: true
-    os:
-      enabled: true
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://admin:admin@localhost:8761/eureka
 spring:
   config:
     import: optional:configserver:http://admin:admin@localhost:8888
-  main:
-    allow-bean-definition-overriding: true
   application:
-    name: eqa-gateway-service
+      name: gateway
   security:
     user:
       name: admin
       password: admin
       roles: ADMIN
-  ssl:
-    bundle:
-      pem:
-        eqa:
-          truststore:
-            certificate: "classpath:eqa_cert.crt"
-  cloud:
-    gateway:
-      routes:
-        - id: microservice-one
-          uri: lb://microservice-one
-          Predicates:
-            - Path=/ms-one/**
-          filters:
-            - name: AuthenticationFilter
-            - name: CircuitBreaker
-              args:
-                name: customCircuitBreaker
-                fallbackUri: forward:/custom-fallback
 
-        - id: microservice-two
-          uri: lb://microservice-two
-          Predicates:
-            - Path=/ms-two/**
-resilience4j:
-  circuitbreaker:
-    instances:
-      customCircuitBreaker:
-        slidingWindowSize: 10
-        permittedNumberOfCallsInHalfOpenState: 5
-        failureRateThreshold: 50
-        waitDurationInOpenState: 10000
-        registerHealthIndicator: true
-  timelimiter:
-    instances:
-      customCircuitBreaker:
-        timeoutDuration: 3s
+
+#  ssl:
+#    bundle:
+#      pem:
+#        eqa:
+#          truststore:
+#            certificate: "classpath:eqa_cert.crt"
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8761/eureka
+
+#logging:
+#  level:
+#    org.springframework.web.HttpLogging: TRACE
+#    reactor.netty.http.server: DEBUG
+#    reactor.netty.http.client: DEBUG
+

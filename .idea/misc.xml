@@ -4,11 +4,11 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/microservice-one/pom.xml" />
-        <option value="$PROJECT_DIR$/microservice-two/pom.xml" />
         <option value="$PROJECT_DIR$/eqa-eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/eqa-config-service/pom.xml" />
         <option value="$PROJECT_DIR$/eqa-gateway-service/pom.xml" />
+        <option value="$PROJECT_DIR$/eqa-microservice-one/pom.xml" />
+        <option value="$PROJECT_DIR$/eqa-microservice-two/pom.xml" />
       </list>
     </option>
   </component>
