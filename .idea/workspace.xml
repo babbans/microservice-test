@@ -5,48 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c879cbf-441d-4409-b65d-b1d08ebc61bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/eqa-config-service/src/main/java/com/eqa/eqaconfigservice/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eqa-eureka-server/src/main/java/com/eqa/eqaeurekaserver/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eqa-eureka-server/src/main/java/com/eqa/eqaeurekaserver/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eqa-eureka-server/src/main/resources/img/spring-logo-eureka.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/aop/AutoLoggingAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/eqa.datadimens.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/eqa.datadimens.p7c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/eqa_cert.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/ApiGatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/FallbackFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/WebSecurity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-config-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-config-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-config-service/src/main/java/com/eqa/eqaconfigservice/EqaConfigServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-config-service/src/main/java/com/eqa/eqaconfigservice/EqaConfigServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-config-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-config-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-config-service/src/test/java/com/eqa/eqaconfigservice/EqaConfigServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/EqaGatewayServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/EqaGatewayServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/java/com/eqa/eqagatewayservice/filter/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-api-gateway/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-api-gateway/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-api-gateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-api-gateway/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqa-api-gateway/mvnw.cmd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eqa-gateway-service/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eurekaserver/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/src/main/java/com/eqa/eqaeurekaserver/EurekaServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eqa-eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-one/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-one/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-two/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-two/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

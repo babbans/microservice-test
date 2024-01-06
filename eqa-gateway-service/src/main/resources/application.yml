@@ -44,7 +44,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   application:
-    name: gateway
+    name: eqa-gateway-service
   security:
     user:
       name: admin
